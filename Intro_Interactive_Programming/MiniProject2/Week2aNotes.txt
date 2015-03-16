@@ -1,0 +1,17 @@
+Local vs. global variables
+
+- variables declared within an indent (conditional or loop) or within a function are deleted after function or indent.
+	
+- to use/update a global variable x within a function or loop, declare: 
+=-=-=-=-=-=
+def f(y)
+	global x
+	out = x + y
+	return out
+=-=-=-=-=-=
+
+Event handlers — Event-driven programming
+
+- Event handlers (also called callbacks) are functions registered to an event such as a button click, keyboard press or mouse click.
+
+- Event handlers react to the event by changing the state (collection of information) encoded in the program

@@ -1,0 +1,12 @@
+f = simplegui.create_frame([title],xdimension,ydimension) creates a simplegui frame
+
+f.[whatever]([title],[handler],[dimension]) adds buttons and other stuff.  handler should be declared BEFORE CREATING ITEMS and "registered" here in this call.
+
+i.e. -=-=-=-=-=-
+def enter(input)
+	# returns input as an int
+	int(input)
+	return input
+
+f.add_input("enter", enter,100)
+-=-=-=-=-=-
